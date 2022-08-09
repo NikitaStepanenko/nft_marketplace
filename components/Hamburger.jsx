@@ -14,7 +14,7 @@ const Hamburger = ({ isOpen, setIsOpen, theme, active, setActive }) => (
         height={20}
         alt="cross"
         onClick={() => setIsOpen(false)}
-        className={theme === 'light' && 'filter invert'}
+        className={theme === 'light' ? 'filter invert' : ''}
       />
     ) : (
       <Image
@@ -24,7 +24,7 @@ const Hamburger = ({ isOpen, setIsOpen, theme, active, setActive }) => (
         height={25}
         alt="menu"
         onClick={() => setIsOpen(true)}
-        className={theme === 'light' && 'filter invert'}
+        className={theme === 'light' ? 'filter invert' : ''}
       />
     )}
 
