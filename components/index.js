@@ -6,5 +6,7 @@ import ButtonGroup from './ButtonGroup';
 import FooterLinks from './FooterLinks';
 import Banner from './Banner';
 import CreatorCard from './CreatorCard';
+import SearchBar from './SearchBar';
+import NFTCard from './NFTCard';
 
-export { Navbar, Footer, MenuItems, Button, ButtonGroup, FooterLinks, Banner, CreatorCard };
+export { Navbar, Footer, MenuItems, Button, ButtonGroup, FooterLinks, Banner, CreatorCard, SearchBar, NFTCard };
