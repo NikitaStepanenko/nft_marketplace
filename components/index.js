@@ -8,5 +8,6 @@ import Banner from './Banner';
 import CreatorCard from './CreatorCard';
 import SearchBar from './SearchBar';
 import NFTCard from './NFTCard';
+import Input from './Input';
 
-export { Navbar, Footer, MenuItems, Button, ButtonGroup, FooterLinks, Banner, CreatorCard, SearchBar, NFTCard };
+export { Navbar, Footer, MenuItems, Button, ButtonGroup, FooterLinks, Banner, CreatorCard, SearchBar, NFTCard, Input };
