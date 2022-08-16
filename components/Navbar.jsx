@@ -8,6 +8,7 @@ import images from '../assets';
 import MenuItems from './MenuItems';
 import ButtonGroup from './ButtonGroup';
 import Hamburger from './Hamburger';
+import { NFTContext } from '../context/NFTContext';
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();

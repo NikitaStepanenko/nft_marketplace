@@ -1,19 +1,19 @@
 import { useRouter } from 'next/router';
-import React from 'react';
+import React, { useContext } from 'react';
+import { NFTContext } from '../context/NFTContext';
 import Button from './Button';
 
-const ButtonGroup = ({ setActive, setIsOpen }) => {
+const ButtonGroup = ({ setActive }) => {
+  const { connectWallet, currentAccount } = useContext(NFTContext);
+
   const router = useRouter();
 
-  const isConnected = true;
-
-  return isConnected ? (
+  return currentAccount ? (
     <Button
       btnName="Create"
       classStyles="mx-2 rounded-xl"
       handleClick={() => {
         setActive('');
-        setIsOpen(false);
         router.push('/create-nft');
       }}
     />
@@ -21,7 +21,7 @@ const ButtonGroup = ({ setActive, setIsOpen }) => {
     <Button
       btnName="Connect"
       classStyles="mx-2 rounded-xl"
-      handleClick={() => {}}
+      handleClick={() => connectWallet()}
     />
   );
 };
